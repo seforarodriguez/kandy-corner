@@ -110,22 +110,64 @@
         {
             "id": 1,
             "name": "Snickers",
-            "productTypeId": 4,
+            "productTypeId": 3,
+            "price": 3.2,
+            "productQuantity": 2
+        },
+        {
+            "id": 2,
+            "name": "Sour Patch Kids",
+            "productTypeId": 2,
+            "price": 3.2,
+            "productQuantity": 2
+        },
+        {
+            "id": 2,
+            "name": "M&M's",
+            "productTypeId": 1,
             "price": 3.2,
             "productQuantity": 2
         },
         {
             "id": 3,
-            "name": "Gummy Bears",
+            "name": "Lollipop",
             "productTypeId": 4,
             "price": 3.2,
             "productQuantity": 2
         },
         {
             "id": 4,
-            "name": "Nerds",
+            "name": "Jolly Rancher",
+            "productTypeId": 1,
+            "price": 3.2,
+            "productQuantity": 2
+        },
+        {
+            "id": 5,
+            "name": "Cotton Cady",
             "productTypeId": 4,
             "price": 3.2,
+            "productQuantity": 2
+        },
+        {
+            "id": 6,
+            "name": "Sparkies",
+            "productTypeId": 2,
+            "price": 3.2,
+            "productQuantity": 2
+        },
+        {
+            "id": 7,
+            "name": "3 Musketeers",
+            "productTypeId": 3,
+            "price": 3.2,
+            "productQuantity": 2
+        },
+        {
+            "id": 8,
+            "name": "Nerds",
+            "productTypeId": 1,
+            "price": 1.5,
             "productQuantity": 2
         }
     ],
@@ -141,21 +183,21 @@
             "id": 3,
             "locationId": 4,
             "customerLoyaltyId": 4,
-            "productId": 3,
+            "productId": 5,
             "productQuantity": 2
         },
         {
             "id": 4,
             "locationId": 2,
             "customerLoyaltyId": 4,
-            "productId": 3,
+            "productId": 4,
             "productQuantity": 2
         },
         {
             "id": 6,
             "locationId": 3,
             "customerLoyaltyId": 4,
-            "productId": 3,
+            "productId": 1,
             "productQuantity": 2
         }
     ],
@@ -165,12 +207,16 @@
             "category": "Hard Candy"
         },
         {
+            "id": 2,
+            "category": "Gum"
+        },
+        {
             "id": 3,
             "category": "Chocolate"
         },
         {
             "id": 4,
-            "category": "Sour Candy"
+            "category": "Soft Candy"
         }
     ],
     "productLocation": [

@@ -27,7 +27,7 @@ return <>
         return <>
         <section className="eachLocation">
             <h3>{location.name}</h3>
-            <p> Located in:{location.address}</p>
+            <p> Located in: {location.address}</p>
             <p>Square ft.: {location.squareFootage} ft.</p>
 
         </section>
