@@ -1,0 +1,13 @@
+.titleKandy {
+    display: flex;
+    background-color: rgb(255, 113, 178);
+    padding:3em;
+    justify-content: center;
+}
+
+.eachLocation {
+    background-color: rgb(255, 213, 213);
+    padding: 2em;
+    margin: 3em;
+    border-radius: 2em;
+}

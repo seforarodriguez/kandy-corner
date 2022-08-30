@@ -83,23 +83,27 @@
     "locations": [
         {
             "id": 1,
-            "address": "03/22/2022",
-            "squareFootage": 1
+            "name":"Main Candy Store",
+            "address": "1st. Street, GA",
+            "squareFootage": 32
         },
         {
             "id": 2,
-            "address": "03/22/2022",
-            "squareFootage": "50mts"
+            "name":"Mini Candy Store",
+            "address": "McDonald Rd, TN",
+            "squareFootage": 50
         },
         {
             "id": 3,
-            "address": "03/22/2022",
-            "squareFootage": "30mts"
+            "name":"Fun Candy Store",
+            "address": "FunaPalluza Ave, OH",
+            "squareFootage": 30
         },
         {
             "id": 4,
-            "address": "03/22/2022",
-            "squareFootage": "50mts"
+            "name":"LollaPallooza Candy Store",
+            "address": "55 Street, Dominican Republic",
+            "squareFootage": 25
         }
     ],
     "products": [
