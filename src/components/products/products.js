@@ -16,6 +16,12 @@ export const ProductsList = () => {
 
     return <>
         <h1>List of Products</h1>
+        <>
+        <button onClick={
+            ""
+        }> Top Priced Products
+        </button>
+        </>
         <article className="productsList">
             {
                 products.map(product => {
