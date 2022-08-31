@@ -13,17 +13,14 @@ export const NavBar = () => {
             <li className="navbar__item active">
                 <Link className="navbar__link" to="/locations">Locations</Link>
             </li>
-            {
-                kandyUserObject.isStaff 
-                ? <>
+            //?This is using a ternary statement to show the all products options only to staff members
+            {kandyUserObject.staff ?
                     <li className="navbar__item active">
                         <Link className="navbar__link" to="/products">All Products</Link>
                     </li>
-                </>
-                : ""  
+                :<li></li>
             }
-            
-            
+        
 
             <li className="navbar__item navbar__logout">
                 <Link className="navbar__link" to="" onClick={() => {
