@@ -2,12 +2,18 @@
     display: flex;
     background-color: rgb(255, 113, 178);
     padding:3em;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titleMessage {
+    font-family: "Snell Roundhand, cursive";
 }
 
 .eachLocation {
     background-color: rgb(255, 213, 213);
     padding: 2em;
     margin: 3em;
-    border-radius: 2em;
+    border: .2em solid rgb(80, 155, 225);
+    border-radius: 1.5rem;
 }

@@ -1,0 +1,16 @@
+.productsList {
+    display: grid;
+    grid-template-rows:    repeat(4, 100px);
+    grid-template-columns: repeat(3, 5fr);
+    height: 100px;
+    border-radius: 4em;
+}
+
+.eachProduct {
+    display: inline-grid;
+    background-color: rgb(80, 155, 225);
+    padding: 0.5em;
+    border: 0.2em solid rgb(255, 160, 173);
+    border-radius: 0.5em;
+    align-content: center;
+}

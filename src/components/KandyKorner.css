@@ -27,6 +27,10 @@ p {
   margin-bottom: 1.5em;
 }
 
+.titleMessage {
+  font-family: "Snell Roundhand, cursive";
+}
+
 .title--main {
   margin-block-end: 0;
 }
