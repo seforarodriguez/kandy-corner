@@ -1,239 +1,245 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "Dion Stoade",
-            "email": "dstoade0@cornell.edu"
-        },
-        {
-            "id": 2,
-            "name": "Windy Thorneloe",
-            "email": "wthorneloe1@usa.gov"
-        },
-        {
-            "id": 3,
-            "name": "Hillie Phillpotts",
-            "email": "hphillpotts2@rakuten.co.jp"
-        },
-        {
-            "id": 4,
-            "name": "Helenelizabeth Passfield",
-            "email": "hpassfield7@netvibes.com"
-        },
-        {
-            "id": 5,
-            "name": "Franchot Slator",
-            "email": "fslator8@51.la"
-        },
-        {
-            "id": 6,
-            "name": "Renaud Erbe",
-            "email": "rerbe9@psu.edu"
-        },
-        {
-            "id": 7,
-            "name": "Jeremy Bakker",
-            "email": "jeremy@bakker.com"
-        }
-    ],
-    "customers": [
-        {
-            "userId": 1,
-            "loyaltyNumber": 10001
-        },
-        {
-            "userId": 3,
-            "loyaltyNumber": 10002
-        },
-        {
-            "userId": 4,
-            "loyaltyNumber": 10003
-        },
-        {
-            "userId": 6,
-            "loyaltyNumber": 10004
-        }
-    ],
-    "employees": [
-        {
-            "userId": 1,
-            "startDate": "03/22/2022",
-            "locationId": 1,
-            "payRate": 15.7
-        },
-        {
-            "userId": 3,
-            "startDate": "03/22/2022",
-            "locationId": 4,
-            "payRate": 15.7
-        },
-        {
-            "userId": 4,
-            "startDate": "03/22/2022",
-            "locationId": 2,
-            "payRate": 15.7
-        },
-        {
-            "userId": 6,
-            "startDate": "03/22/2022",
-            "locationId": 3,
-            "payRate": 15.7
-        }
-    ],
-    "locations": [
-        {
-            "id": 1,
-            "name":"Main Candy Store",
-            "address": "1st. Street, GA",
-            "squareFootage": 32
-        },
-        {
-            "id": 2,
-            "name":"Mini Candy Store",
-            "address": "McDonald Rd, TN",
-            "squareFootage": 50
-        },
-        {
-            "id": 3,
-            "name":"Fun Candy Store",
-            "address": "FunaPalluza Ave, OH",
-            "squareFootage": 30
-        },
-        {
-            "id": 4,
-            "name":"LollaPallooza Candy Store",
-            "address": "55 Street, Dominican Republic",
-            "squareFootage": 25
-        }
-    ],
-    "products": [
-        {
-            "id": 1,
-            "name": "Snickers",
-            "productTypeId": 3,
-            "price": 3.2,
-            "productQuantity": 2
-        },
-        {
-            "id": 2,
-            "name": "Sour Patch Kids",
-            "productTypeId": 2,
-            "price": 3.2,
-            "productQuantity": 2
-        },
-        {
-            "id": 2,
-            "name": "M&M's",
-            "productTypeId": 1,
-            "price": 3.2,
-            "productQuantity": 2
-        },
-        {
-            "id": 3,
-            "name": "Lollipop",
-            "productTypeId": 4,
-            "price": 3.2,
-            "productQuantity": 2
-        },
-        {
-            "id": 4,
-            "name": "Jolly Rancher",
-            "productTypeId": 1,
-            "price": 3.2,
-            "productQuantity": 2
-        },
-        {
-            "id": 5,
-            "name": "Cotton Cady",
-            "productTypeId": 4,
-            "price": 3.2,
-            "productQuantity": 2
-        },
-        {
-            "id": 6,
-            "name": "Sparkies",
-            "productTypeId": 2,
-            "price": 3.2,
-            "productQuantity": 2
-        },
-        {
-            "id": 7,
-            "name": "3 Musketeers",
-            "productTypeId": 3,
-            "price": 3.2,
-            "productQuantity": 2
-        },
-        {
-            "id": 8,
-            "name": "Nerds",
-            "productTypeId": 1,
-            "price": 1.5,
-            "productQuantity": 2
-        }
-    ],
-    "purchases": [
-        {
-            "id": 1,
-            "locationId": 1,
-            "customerLoyaltyId": 4,
-            "productId": 3,
-            "productQuantity": 2
-        },
-        {
-            "id": 3,
-            "locationId": 4,
-            "customerLoyaltyId": 4,
-            "productId": 5,
-            "productQuantity": 2
-        },
-        {
-            "id": 4,
-            "locationId": 2,
-            "customerLoyaltyId": 4,
-            "productId": 4,
-            "productQuantity": 2
-        },
-        {
-            "id": 6,
-            "locationId": 3,
-            "customerLoyaltyId": 4,
-            "productId": 1,
-            "productQuantity": 2
-        }
-    ],
-    "productTypes": [
-        {
-            "id": 1,
-            "category": "Hard Candy"
-        },
-        {
-            "id": 2,
-            "category": "Gum"
-        },
-        {
-            "id": 3,
-            "category": "Chocolate"
-        },
-        {
-            "id": 4,
-            "category": "Soft Candy"
-        }
-    ],
-    "productLocation": [
-        {
-            "id": 1,
-            "locationId": 1,
-            "productId": 2
-        },
-        {
-            "id": 3,
-            "locationId": 2,
-            "productId": 3
-        },
-        {
-            "id": 4,
-            "locationId": 4,
-            "productId": 2
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Dion Stoade",
+      "email": "dstoade0@cornell.edu"
+    },
+    {
+      "id": 2,
+      "name": "Windy Thorneloe",
+      "email": "wthorneloe1@usa.gov"
+    },
+    {
+      "id": 3,
+      "name": "Hillie Phillpotts",
+      "email": "hphillpotts2@rakuten.co.jp"
+    },
+    {
+      "id": 4,
+      "name": "Helenelizabeth Passfield",
+      "email": "hpassfield7@netvibes.com"
+    },
+    {
+      "id": 5,
+      "name": "Franchot Slator",
+      "email": "fslator8@51.la"
+    },
+    {
+      "id": 6,
+      "name": "Renaud Erbe",
+      "email": "rerbe9@psu.edu"
+    },
+    {
+      "id": 7,
+      "name": "Jeremy Bakker",
+      "email": "jeremy@bakker.com"
+    },
+    {
+      "email": "burs@bur.com",
+      "fullName": "Burris Burrs",
+      "isStaff": true,
+      "id": 8
+    }
+  ],
+  "customers": [
+    {
+      "userId": 1,
+      "loyaltyNumber": 10001
+    },
+    {
+      "userId": 3,
+      "loyaltyNumber": 10002
+    },
+    {
+      "userId": 4,
+      "loyaltyNumber": 10003
+    },
+    {
+      "userId": 6,
+      "loyaltyNumber": 10004
+    }
+  ],
+  "employees": [
+    {
+      "userId": 1,
+      "startDate": "03/22/2022",
+      "locationId": 1,
+      "payRate": 15.7
+    },
+    {
+      "userId": 3,
+      "startDate": "03/22/2022",
+      "locationId": 4,
+      "payRate": 15.7
+    },
+    {
+      "userId": 4,
+      "startDate": "03/22/2022",
+      "locationId": 2,
+      "payRate": 15.7
+    },
+    {
+      "userId": 6,
+      "startDate": "03/22/2022",
+      "locationId": 3,
+      "payRate": 15.7
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Main Candy Store",
+      "address": "1st. Street, GA",
+      "squareFootage": 32
+    },
+    {
+      "id": 2,
+      "name": "Mini Candy Store",
+      "address": "McDonald Rd, TN",
+      "squareFootage": 50
+    },
+    {
+      "id": 3,
+      "name": "Fun Candy Store",
+      "address": "FunaPalluza Ave, OH",
+      "squareFootage": 30
+    },
+    {
+      "id": 4,
+      "name": "LollaPallooza Candy Store",
+      "address": "55 Street, Dominican Republic",
+      "squareFootage": 25
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Snickers",
+      "productTypeId": 3,
+      "price": 3.2,
+      "productQuantity": 2
+    },
+    {
+      "id": 2,
+      "name": "Sour Patch Kids",
+      "productTypeId": 2,
+      "price": 3.2,
+      "productQuantity": 2
+    },
+    {
+      "id": 2,
+      "name": "M&M's",
+      "productTypeId": 1,
+      "price": 3.2,
+      "productQuantity": 2
+    },
+    {
+      "id": 3,
+      "name": "Lollipop",
+      "productTypeId": 4,
+      "price": 3.2,
+      "productQuantity": 2
+    },
+    {
+      "id": 4,
+      "name": "Jolly Rancher",
+      "productTypeId": 1,
+      "price": 3.2,
+      "productQuantity": 2
+    },
+    {
+      "id": 5,
+      "name": "Cotton Cady",
+      "productTypeId": 4,
+      "price": 3.2,
+      "productQuantity": 2
+    },
+    {
+      "id": 6,
+      "name": "Sparkies",
+      "productTypeId": 2,
+      "price": 3.2,
+      "productQuantity": 2
+    },
+    {
+      "id": 7,
+      "name": "3 Musketeers",
+      "productTypeId": 3,
+      "price": 3.2,
+      "productQuantity": 2
+    },
+    {
+      "id": 8,
+      "name": "Nerds",
+      "productTypeId": 1,
+      "price": 1.5,
+      "productQuantity": 2
+    }
+  ],
+  "purchases": [
+    {
+      "id": 1,
+      "locationId": 1,
+      "customerLoyaltyId": 4,
+      "productId": 3,
+      "productQuantity": 2
+    },
+    {
+      "id": 3,
+      "locationId": 4,
+      "customerLoyaltyId": 4,
+      "productId": 5,
+      "productQuantity": 2
+    },
+    {
+      "id": 4,
+      "locationId": 2,
+      "customerLoyaltyId": 4,
+      "productId": 4,
+      "productQuantity": 2
+    },
+    {
+      "id": 6,
+      "locationId": 3,
+      "customerLoyaltyId": 4,
+      "productId": 1,
+      "productQuantity": 2
+    }
+  ],
+  "productTypes": [
+    {
+      "id": 1,
+      "category": "Hard Candy"
+    },
+    {
+      "id": 2,
+      "category": "Gum"
+    },
+    {
+      "id": 3,
+      "category": "Chocolate"
+    },
+    {
+      "id": 4,
+      "category": "Soft Candy"
+    }
+  ],
+  "productLocation": [
+    {
+      "id": 1,
+      "locationId": 1,
+      "productId": 2
+    },
+    {
+      "id": 3,
+      "locationId": 2,
+      "productId": 3
+    },
+    {
+      "id": 4,
+      "locationId": 4,
+      "productId": 2
+    }
+  ]
 }
