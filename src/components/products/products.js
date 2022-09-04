@@ -31,7 +31,8 @@ export const ProductsList = () => {
     return <>
 
         <h1>List of Products</h1>
-        <button onClick={()=> { topPricedPictures ?setTopPriced(true) :setFiltered(false)}}>Top Priced Products</button>
+        <button onClick={()=> { setTopPriced(true)}}>Top Priced Products</button>
+        <button onClick={()=> { setTopPriced(false)}}>Show me everyhing</button>
         <article className="productsList">
             {
                 filteredProducts.map(product => {
