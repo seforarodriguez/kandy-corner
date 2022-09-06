@@ -8,7 +8,7 @@ export const ProductsList = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:8088/products')
+        fetch('http://localhost:8088/products?_expand=productType')
             .then(response => response.json())
             .then((productsArray) => {
                 setProducts(productsArray)
@@ -42,6 +42,7 @@ export const ProductsList = () => {
                             Costs:$USD{product.price}
                             <br></br>
                             Available:{product.productQuantity}
+                            Product type: {product.productType.category}
                         </div>
                     </>
                 })
