@@ -6,16 +6,27 @@ export const ProductsList = () => {
     const [filteredProducts, setFiltered] = useState([])
     const [topPricedProducts, setTopPriced] = useState(false)
 
-
     useEffect(() => {
         fetch('http://localhost:8088/products?_expand=productType')
             .then(response => response.json())
             .then((productsArray) => {
                 setProducts(productsArray)
                 setFiltered(productsArray)
+
             })
-    },
-        [])
+    }, [])
+
+
+
+
+    useEffect(() => {
+        if (topPricedProducts) {
+            const topPricedProductsArray = products.filter(product => { return product.price >= 2 })
+            setFilteredProducts(topPricedProductsArray)
+        } else {
+            setFilteredProducts(products)
+        }
+    }, [topPricedProducts])
 
         useEffect(()=> {
             if (topPricedProducts) {
@@ -31,8 +42,10 @@ export const ProductsList = () => {
     return <>
 
         <h1>List of Products</h1>
+
         <button onClick={()=> { setTopPriced(true)}}>Top Priced Products</button>
         <button onClick={()=> { setTopPriced(false)}}>Show me everyhing</button>
+        
         <article className="productsList">
             {
                 filteredProducts.map(product => {

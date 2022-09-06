@@ -124,21 +124,21 @@
       "id": 2,
       "name": "Sour Patch Kids",
       "productTypeId": 2,
-      "price": 3.2,
+      "price": 2.2,
       "productQuantity": 2
     },
     {
       "id": 2,
       "name": "M&M's",
       "productTypeId": 1,
-      "price": 3.2,
+      "price": 1.2,
       "productQuantity": 2
     },
     {
       "id": 3,
       "name": "Lollipop",
       "productTypeId": 4,
-      "price": 3.2,
+      "price": 1.2,
       "productQuantity": 2
     },
     {
@@ -166,7 +166,7 @@
       "id": 7,
       "name": "3 Musketeers",
       "productTypeId": 3,
-      "price": 3.2,
+      "price": 4.2,
       "productQuantity": 2
     },
     {
