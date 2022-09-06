@@ -3,15 +3,16 @@ import "./products.css"
 
 export const ProductsList = () => {
     const [products, setProducts] = useState([])
-    const [filteredProducts, setFilteredProducts] = useState([])
+    const [filteredProducts, setFiltered] = useState([])
     const [topPricedProducts, setTopPriced] = useState(false)
 
     useEffect(() => {
-        fetch('http://localhost:8088/products')
+        fetch('http://localhost:8088/products?_expand=productType')
             .then(response => response.json())
             .then((productsArray) => {
                 setProducts(productsArray)
-                setFilteredProducts(productsArray)
+                setFiltered(productsArray)
+
             })
     }, [])
 
@@ -27,13 +28,24 @@ export const ProductsList = () => {
         }
     }, [topPricedProducts])
 
+        useEffect(()=> {
+            if (topPricedProducts) {
+                const topPricedArray = products.filter(product => {
+                    return product.price > 2
+                })
+            setFiltered(topPricedArray)
+            } else {
+                setFiltered(products)
+            }
+        },[topPricedProducts])
 
     return <>
+
         <h1>List of Products</h1>
-        <>
-            <button onClick={() => setTopPriced(true)}> Top Priced Products </button>
-            <button onClick={() => setTopPriced(false)}> All Products </button>
-        </>
+
+        <button onClick={()=> { setTopPriced(true)}}>Top Priced Products</button>
+        <button onClick={()=> { setTopPriced(false)}}>Show me everyhing</button>
+        
         <article className="productsList">
             {
                 filteredProducts.map(product => {
@@ -43,6 +55,7 @@ export const ProductsList = () => {
                             Costs:$USD{product.price}
                             <br></br>
                             Available:{product.productQuantity}
+                            Product type: {product.productType.category}
                         </div>
                     </>
                 })
