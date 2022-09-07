@@ -15,9 +15,14 @@ export const NavBar = () => {
                 <Link className="navbar__link" to="/locations">Locations</Link>
             </li>
             {kandyUserObject.staff ?
+                <>
                 <li className="navbar__item active">
                     <Link className="navbar__link" to="/products">All Products</Link>
                 </li>
+                <li>
+                    <Link className="navbar_link active" to="products/create">Create New Form </Link>
+                </li>
+                </>
                 : <li></li>
             }
             <li className="navbar__item navbar__logout">

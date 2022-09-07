@@ -19,7 +19,6 @@ export const KandyKorner = () => {
 					<ApplicationViews />
 				</>
 			</Authorized>
-			
 		} />
 	</Routes>
 }
