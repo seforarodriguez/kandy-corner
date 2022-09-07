@@ -8,7 +8,7 @@ export const ProductForm = () => {
     const [types, updateType] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:8088/productTypes')
+        fetch('http://localhost:8018/productTypes')
             .then(response => response.json())
             .then((productsTypeArray) => {
                 updateType(productsTypeArray)
@@ -36,7 +36,7 @@ export const ProductForm = () => {
         }
 
         // TODO: Perform the fetch() to POST the object to the API
-        return fetch(`http://localhost:8088/products`, {
+        return fetch(`http://localhost:8018/products`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

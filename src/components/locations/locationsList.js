@@ -7,7 +7,7 @@ export const LocationList = () => {
 
     //?This is pulling the information from the database
 useEffect(() => {
-    fetch('http://localhost:8088/locations')
+    fetch('http://localhost:8018/locations')
     .then(response => response.json())
     .then((locationsArray)=> {
         setLocations(locationsArray)
