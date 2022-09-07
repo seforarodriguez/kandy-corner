@@ -7,7 +7,7 @@ export const ProductsList = () => {
     const [topPricedProducts, setTopPriced] = useState(false)
 
     useEffect(() => {
-        fetch('http://localhost:8088/products')
+        fetch('http://localhost:8088/products?_expand=productType')
             .then(response => response.json())
             .then((productsArray) => {
                 setProducts(productsArray)
