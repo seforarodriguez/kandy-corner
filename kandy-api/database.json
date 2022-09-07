@@ -175,6 +175,53 @@
       "productTypeId": 1,
       "price": 1.5,
       "productQuantity": 2
+    },
+    {
+      "userId": 1,
+      "name": "Chokies",
+      "productTypeId": 3,
+      "price": 2.44,
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "name": "Chacalaca",
+      "productTypeId": 2,
+      "price": 3,
+      "productQuantity": "15",
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "name": "Chacalaca",
+      "productTypeId": 2,
+      "price": 3,
+      "productQuantity": "15",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "name": "Chacalaca",
+      "productTypeId": 2,
+      "price": 3,
+      "productQuantity": "15",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "name": "chacalaca",
+      "productTypeId": 1,
+      "price": 4,
+      "productQuantity": "40",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "name": "Cahacalaca",
+      "productTypeId": 1,
+      "price": 5,
+      "productQuantity": "13",
+      "id": 14
     }
   ],
   "purchases": [
