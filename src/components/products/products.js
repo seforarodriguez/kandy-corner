@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./products.css"
 
-export const ProductsList = () => {
+export const ProductsList = ({theProductSearch}) => {
     const [products, setProducts] = useState([])
     const [filteredProducts, setFilteredProducts] = useState([])
     const [topPricedProducts, setTopPriced] = useState(false)
@@ -14,6 +14,15 @@ export const ProductsList = () => {
                 setFilteredProducts(productsArray)
             })
     }, [])
+
+
+   useEffect(() => {
+    const searchProduct = products.filter(product => {
+        return product.name.includes(theProductSearch)
+    })
+        setFilteredProducts(searchProduct)
+   }, [theProductSearch]
+   )
 
 
 

@@ -1,7 +1,8 @@
 import {Outlet, Route, Routes} from "react-router-dom"
 import { LocationList } from "../locations/locationsList"
 import { ProductForm } from "../productForm/productform"
-import { ProductsList } from "../products/products"
+import { ProductContainer } from "../products/productsContainer"
+
 
 //!what does the <outlet/> do?
 export const ApplicationViews = () => {
@@ -17,7 +18,7 @@ export const ApplicationViews = () => {
 					<Outlet />
 				</>
 		}>
-			<Route path="products" element={ <ProductsList/> }/>
+			<Route path="products" element={<ProductContainer/>}/>
 			<Route path="locations" element={ <LocationList />} />
 			<Route path="products/create" element={ <ProductForm />} />
 		</Route>
