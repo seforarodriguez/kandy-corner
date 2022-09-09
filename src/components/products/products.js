@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./products.css"
 
-export const ProductsList = ({theProductSearch}) => {
+export const ProductsList = ({ theProductSearch }) => {
     const [products, setProducts] = useState([])
     const [filteredProducts, setFilteredProducts] = useState([])
     const [topPricedProducts, setTopPriced] = useState(false)
@@ -16,13 +16,14 @@ export const ProductsList = ({theProductSearch}) => {
     }, [])
 
 
-   useEffect(() => {
-    const searchProduct = products.filter(product => {
-        return product.name.includes(theProductSearch)
-    })
+    //this is filtering the products by what is typed in product search component
+    useEffect(() => {
+        const searchProduct = products.filter(product => {
+            return product.name.toLowerCase().includes(theProductSearch.toLowerCase())
+        })
         setFilteredProducts(searchProduct)
-   }, [theProductSearch]
-   )
+    }, [theProductSearch]
+    )
 
 
 
