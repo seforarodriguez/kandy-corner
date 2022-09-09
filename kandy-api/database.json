@@ -3,36 +3,43 @@
     {
       "id": 1,
       "name": "Dion Stoade",
+      "isStaff": false,
       "email": "dstoade0@cornell.edu"
     },
     {
       "id": 2,
       "name": "Windy Thorneloe",
+      "isStaff": true,
       "email": "wthorneloe1@usa.gov"
     },
     {
       "id": 3,
       "name": "Hillie Phillpotts",
+      "isStaff": true,
       "email": "hphillpotts2@rakuten.co.jp"
     },
     {
       "id": 4,
       "name": "Helenelizabeth Passfield",
+      "isStaff": false,
       "email": "hpassfield7@netvibes.com"
     },
     {
       "id": 5,
       "name": "Franchot Slator",
+      "isStaff": false,
       "email": "fslator8@51.la"
     },
     {
       "id": 6,
       "name": "Renaud Erbe",
+      "isStaff": false,
       "email": "rerbe9@psu.edu"
     },
     {
       "id": 7,
       "name": "Jeremy Bakker",
+      "isStaff": true,
       "email": "jeremy@bakker.com"
     },
     {

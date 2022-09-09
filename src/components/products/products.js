@@ -6,6 +6,7 @@ export const ProductsList = ({ theProductSearch }) => {
     const [filteredProducts, setFilteredProducts] = useState([])
     const [topPricedProducts, setTopPriced] = useState(false)
 
+    //this is fetching the products from the database with product type database
     useEffect(() => {
         fetch('http://localhost:8018/products?_expand=productType')
             .then(response => response.json())
@@ -27,7 +28,7 @@ export const ProductsList = ({ theProductSearch }) => {
 
 
 
-
+    //this is watching for when the top priced products button is selected and it filters for those over 2 dollars
     useEffect(() => {
         if (topPricedProducts) {
             const topPricedProductsArray = products.filter(product => { return product.price >= 2 })
@@ -48,12 +49,14 @@ export const ProductsList = ({ theProductSearch }) => {
             {
                 filteredProducts.map(product => {
                     return <>
-                        <div className="eachProduct">
-                            <h3>{product.name}</h3>
-                            Costs:$USD{product.price}
-                            <br></br>
-                            Available:{product.productQuantity}
-                        </div>
+                        <section className="eachProduct">
+                            <label>{product.name}</label>
+                            <ul>
+                                <li> Costs:$USD{product.price} </li>
+                                <li>Available:{product.productQuantity}</li>
+                                <li> Product type: {product.productType.category}</li>
+                            </ul>
+                        </section>
                     </>
                 })
             }
